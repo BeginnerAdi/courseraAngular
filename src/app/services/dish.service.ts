@@ -12,11 +12,11 @@ export class DishService {
   	constructor() { }
 
   	getDishes(): Dish[] {
-	return DISHES;
+		return DISHES;
 	}
 
-	getDish(id: string): Dish {
-		return DISHES.filter((dish) => (dish.id==id))[0];
+	getDish(id: number): Dish {
+		return DISHES.filter((dish) => (dish.id===id))[0];
 	}
 
 	getFeaturedDish(): Dish {
